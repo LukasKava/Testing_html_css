@@ -1,0 +1,221 @@
+body {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.Overview_offerings_container {
+	border: 1px solid blue;
+	width: 1140px;
+	height: 600px;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.text_container {
+	border: 1px solid purple;
+	width: 48%;
+}
+
+.big_heading_for_most_pages {
+	margin-bottom: 2.12rem !important;
+	color: #102349;
+	font-family: "Exo 2";
+	font-size: 2.125rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: 0.00425rem;
+}
+
+.paragraph_holder {
+	width: 80%;
+}
+
+.normal_paragraph {
+	color: #000;
+	font-family: "Open Sans";
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 1.875rem;
+	letter-spacing: 0.002rem;
+}
+
+.Overview_offerings_illustration_container {
+	width: 51.125rem;
+	height: 51.125rem;
+	position: absolute;
+	right: -122px;
+}
+
+.Overview_container {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    position: relative;
+	width: 51.125rem;
+    height: 51.125rem;
+}
+
+.Overview_illustration_container {
+    border: 1px solid yellow;
+    width: 51.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Overview_illustration_center {
+    /* border: 1px solid red; */
+}
+
+.Overview_illustration_ring {
+    position: absolute;
+    /* border: 1px solid blue; */
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+}
+
+.Overview_illustration_ring1 {
+	position: absolute;
+    /* border: 1px solid blue; */
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+	animation-name: ring_one;
+	animation-duration: 30s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes ring_one {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.Overview_illustration_ring3 {
+	position: absolute;
+    /* border: 1px solid blue; */
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+	animation-name: ring_two;
+	animation-duration: 120s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes ring_two {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.Overview_illustration_button_collection {
+    /* border: 1px solid red; */
+    width: 35.12519rem;
+    height: 35.12519rem;
+	position: absolute;
+}
+
+.Overview_illustration_collection {
+	border: 1px solid yellow;
+    width: 35.12519rem;
+    height: 35.12519rem;
+	position: relative;
+}
+
+
+
+.Overview_illustration_item {
+	width: 9.5rem;
+	height: 9.5rem;
+	background-color: #FFF;
+	border-radius: 100%;
+	border: 1px solid #F6F7F9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+
+	color: #000;
+
+	text-align: center;
+	font-family: "Open Sans";
+	font-size: 0.8125rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.25rem; /* 153.846% */
+}
+
+.Overview_illustration_item:hover {
+	background-color: #1A67DC;
+	color: #FFF;
+	font-weight: 400;
+}
+
+.Overview_illustration_item_shadow {
+	width: 9.5rem;
+	height: 9.5rem;
+	background-color: #FFF;
+	border-radius: 100%;
+	filter: drop-shadow(0px 0px 20px rgba(0, 179, 255, 0.07));
+	position: absolute;
+	z-index: 0;
+}
+
+.Overview_illustration_item_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+/*Important positioning part: class for the <a></a>*/
+.Overview_illustration_item_link {
+	position: absolute;
+	text-decoration: none;
+	border-radius: 1px solid blue;
+}
+
+/*Debris and Methods*/
+.Overview_illustration_item_link:nth-child(1) {
+	top: 2rem;
+	left: 6rem;
+}
+
+/*Atmosphere and Ionosphere*/
+.Overview_illustration_item_link:nth-child(2) {
+	top: 2rem;
+	right: 6rem;
+}
+
+/*Complete*/
+.Overview_illustration_item_link:nth-child(3) {
+	top: 12.812595rem;
+	left: 0rem;
+}
+
+/*Framework*/
+.Overview_illustration_item_link:nth-child(4) {
+    top: 12.812595rem;
+    right: 0rem;
+}
+
+/*Sunlight*/
+.Overview_illustration_item_link:nth-child(5) {
+	bottom: 2rem;
+	left: 6rem;
+}
+
+
+/*Contamination and Outgassing*/
+.Overview_illustration_item_link:nth-child(6) {
+	bottom: 2rem;
+	right: 6rem;
+}

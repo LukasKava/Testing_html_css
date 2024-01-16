@@ -1,0 +1,90 @@
+body {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.graphical_interface_section {
+	border: 1px solid blue;
+	width: 1140px;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.big_heading_for_most_pages {
+	margin-bottom: 2.12rem !important;
+	color: #102349;
+	font-family: "Exo 2";
+	font-size: 2.125rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: 0.00425rem;
+}
+
+.gis_small_heading {
+	margin-bottom: 1.6rem;
+	color: #102349;
+	font-family: "Exo 2";
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 150%;
+	letter-spacing: 0.0025rem;
+}
+
+.gis_text_section {
+	border: 1px solid red;
+	margin-bottom: 3rem;
+}
+
+.gis_text_section:nth-child(1) {
+	width: 56%;
+}
+
+.gis_text_section:nth-child(2) {
+	width: 40%;
+	margin-bottom: 5rem;
+}
+
+.gis_text_section:nth-child(3) {
+	width: 80%;
+	margin-bottom: 0;
+}
+
+.gis_text_section p {
+	color: var(--TEXT, #000);
+
+	/* Paragraph */
+	font-family: "Open Sans";
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 1.875rem; /* 187.5% */
+	letter-spacing: 0.002rem;
+	margin:0;
+}
+
+
+.gis_list {
+	border: 1px yellow solid;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.gis_list_element {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 2rem;
+}
+
+.gsi_image{
+	width: 60rem;
+	height: 60rem;
+	position: absolute;
+	bottom: -70px;
+	right: -100px;
+}

@@ -1,0 +1,139 @@
+body {
+	margin: 0;
+}
+
+form {
+	width: 60vw;
+	max-width: 1140px;
+	min-width: 300px;
+	margin: 0 auto;
+}
+
+fieldset {
+	border: 0;
+	border-bottom: 1px solid rgba(26, 103, 220, 0.5);
+	margin-bottom: 2.12rem;
+}
+
+label {
+	margin-bottom: 1.5rem;
+}
+
+.small_heading_registration {
+	margin-bottom: 1rem;
+	color: #102349;
+	font-family: "Exo 2";
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 150%; /* 1.875rem */
+	letter-spacing: 0.0025rem;
+}
+
+fieldset:last-of-type {
+	border: 0;
+}
+
+label {
+	display: block;
+}
+
+input {
+	width: 100%;
+}
+
+.inline, textarea {
+	width: unset;
+	display: inline;
+	vertical-align: middle;
+}
+
+.packages label {
+	display: flex;
+	flex-direction: row;
+	gap: 0.8rem;
+}
+
+.operating_system label {
+	display: flex;
+	flex-direction: row;
+	gap: 0.8rem;
+}
+
+.gender {
+	gap: 1.5rem;
+	display: inline-flex;
+	align-items: center;
+	color:#102349;
+	font-family: "Exo 2";
+	font-size: 0.8rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.9rem; /* 1.875rem */
+	letter-spacing: 0.0025rem;
+	
+}
+
+.gender label {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: auto 0;
+}
+
+.gender p {
+	margin-right: 1rem;
+}
+
+.gender input {
+	margin-right: 0.5rem;
+}
+
+label {
+	/*Text*/
+	color:#102349;
+	display: flex;
+	flex-direction: column;
+	font-family: "Exo 2";
+	font-size: 0.8rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.9rem; /* 1.875rem */
+	letter-spacing: 0.0025rem;
+}
+
+input[type="text"] {
+	height: 1.8rem;
+	border-radius: 0.2rem;
+	border: 1px solid #102349;
+	opacity: 0.8;
+	width: 70%;
+}
+
+input[type="submit"] {
+	margin-top: 3rem;
+	align-self: center;
+	width: fit-content;
+	padding: 0.5rem 2.88rem;
+	color: #FFF;
+	text-align: center;
+	font-family: "Exo 2";
+	font-size: 1.2rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 2rem; /* 200% */
+	letter-spacing: 0.004rem;
+	border-radius: 6.25rem;
+	border: 1px solid #1A67DC;
+	background:  #1A67DC;
+}
+
+input[type="submit"]:hover {
+	background-color: #FFF;
+	color:#1A67DC;
+}
+
+textarea {
+	width: 100%;
+	height: 300px;
+}

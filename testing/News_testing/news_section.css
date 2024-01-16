@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+}
+
+.news_container {
+	padding-top: 3.13rem;
+	padding-bottom: 3.13rem;
+    width: 100%;
+    /* border: 1px solid red; */
+    background-color: #0D1224;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.news_inside_container {
+    /* border: 1px solid yellow; */
+    width: 71.25rem;
+    display: flex;
+    flex-direction: row;
+	justify-content: space-around;
+}
+
+.news_item {
+    border-radius: 0.625rem;
+    /* border: 1px solid paleturquoise; */
+    background-color: #112956;
+
+}
+
+.news_tag {
+	border-radius: 6.25rem;
+	background: #1A67DC;
+	box-shadow: 0px 0px 100px 20px rgba(26, 103, 220, 0.18);
+	display: flex;
+    padding: 0.1rem 2.8rem;
+	justify-content: center;
+	align-items: center;
+    color: #FFF;
+
+    text-align: center;
+    font-family: "Exo 2";
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: auto;
+
+	margin-bottom: 2.5rem;
+}
+
+.news_button {
+	margin-top: 4.25rem;
+	color: #FFF;
+
+	text-align: center;
+	font-family: "Exo 2";
+	font-size: 0.75rem;
+	font-style: normal;
+	font-weight: 400;
+
+
+	display: inline-flex;
+	padding: 0.1rem 2.125rem;
+	justify-content: center;
+	align-items: center;
+
+
+	border-radius: 6.25rem;
+	border: 1px solid #1A67DC;
+	background: rgba(26, 103, 220, 0.20);
+	box-shadow: 0px 0px 100px 20px rgba(26, 103, 220, 0.18);
+	backdrop-filter: blur(2px);
+}
+
+.news_button:hover {
+	background-color: #1A67DC;
+	color: #FFF;
+}
+
+.news_item h4{
+	color: rgba(255, 255, 255, 0.82);
+
+	margin:0;
+	font-family: "Exo 2";
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.375rem; /* 137.5% */
+	letter-spacing: 0.002rem;
+}
+
+.news_item {
+	justify-content: center;
+	width: 16.6875rem;
+	height: 10.4rem;
+	display: flex;
+
+	align-items: center;
+}
+
+
+.inside_inside {
+	/* border: 1px solid red; */
+	width: 11rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.news_information_tags {
+	display: flex;
+	flex-direction: column;
+	color: rgba(255, 255, 255, 0.50);
+
+	gap: 0.1rem;
+
+	font-family: "Open Sans";
+	font-size: 0.8rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 0;
+	letter-spacing: 0.00131rem;
+}
+
+
+/*REQUIRED FOR THE OVERLAY OF THE DIV*/
+.news_hover {
+	/* border: 1px solid yellow; */
+
+	width: 16.6875rem;
+	height: 10.4rem;
+	position: absolute;
+	top: 0;
+
+	background: rgba(16, 35, 73, 0.80);
+	backdrop-filter: blur(2px);
+	border-radius: 0.625rem;
+	overflow: hidden;
+	display: flex;
+	opacity: 0%;
+	align-items: center;
+}
+
+.news_hover:hover {
+	opacity: 100%;
+}
+
+.news_column {
+	/* border: 1px solid red; */
+	position: relative;
+}
+
+.news_hover_picture {
+	width: 20rem;
+	height: 20rem;
+	position:absolute;
+	right: -10rem;
+}
+
+.news_read_more_button {
+	display: flex;
+	/* border: 1px solid purple; */
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: nowrap;
+	margin-left: 2.6rem;
+	gap: 0.8rem;
+	position: absolute;
+
+	/*FOR THE TEXT*/
+	text-decoration: none;
+	color: #FFF;
+	font-family: "Exo 2";
+	font-size: 1.2rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 0.00175rem;
+	flex-wrap: nowrap;
+}
+

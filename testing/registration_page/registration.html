@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./registration.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+	<link href='https://fonts.googleapis.com/css?family=Exo 2' rel='stylesheet'>
+</head>
+<body>
+	<div class="form_wrapper">
+		<form name="eingabe" method="post" action="" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
+			<fieldset>
+				<div class="gender">
+					 <p class="small_heading_registration">Gender</p><br>
+					<label for="female"><input id="female" type="radio" name="gender" class="inline" checked/>Ms/Mrs</label>
+					<label for="male"><input id="male" type="radio" name="gender" class="inline" />Mr</label>
+				</div>
+				<label for="title">Title<input id="title" type="text" maxlength="60" /></label>
+				<label for="firstname">First Name: *<input id="firstname" type="text" maxlength="60" required/></label>
+				<label for="last_name">Last Name: *<input id="last_name" type="text" maxlength="60" required/></label>
+				<label for="company">Company/Organisation: *<input id="company" type="text" maxlength="60" required/></label>
+				<label for="email">Email: *<input id="email" type="text" maxlength="60" required/></label>
+				<label for="address">Street Address: *<input id="address" type="text" maxlength="60" required/></label>
+				<label for="zip">Zip/Postal Code: *<input id="zip" type="text" maxlength="60" required/></label>
+				<label for="city">City: *<input id="city" type="text" maxlength="60" required/></label>
+				<label for="country">Country: *<input id="country" type="text" maxlength="60" required/></label>
+				<label for="phone">Phone: *<input id="phone" type="text" maxlength="60" required/></label>
+				<label for="fax">Fax:<input id="fax" type="text" maxlength="60"/></label>
+				<label for="subject">Subject:<input id="subject" type="text" maxlength="60" /></label>
+			</fieldset>
+			<fieldset class="packages">
+				<legend class="small_heading_registration">Select packages *</legend>
+				<label for="demo"><input id="demo" class="inline" type="checkbox" name="demo"/>Demo</label>
+				<label for="debris"><input id="debris" class="inline" type="checkbox" name="debris"/>Debris</label>
+				<label for="sunlight"><input id="sunlight" class="inline" type="checkbox" name="sunlight"/>Atmosphere-Ionosphere-sunlight</label>
+				<label for="comova"><input id="comova" class="inline" type="checkbox" name="comova"/>COMOVA</label>
+				<label for="framework"><input id="framework" class="inline" type="checkbox" name="comova"/>ESABASE2 Framework</label>
+				<label for="complete"><input id="complete" class="inline" type="checkbox" name="complete"/>Complete</label>	
+			</fieldset>
+			<fieldset class="operating_system">
+				<legend class="small_heading_registration">Select operating system *</legend>
+				<label for="os"><input id="os" class="inline" type="radio" name="os" checked/>Windows(64 bit)</label>
+				<label for="linux"><input id="linux" class="inline" type="radio" name="os" disabled/>Linux(64 bit) <span>currently not available</span></label>
+			</fieldset>
+			<label for="message"><p class="small_heading_registration">What is your intended use of ESABASE2:</p><br>
+				<textarea id="message" name="message" rows="50" cols="80" placeholder="plan a space mission..."></textarea>
+			</label>
+			<input type="submit" value="Submit" />
+		</form>
+	</div>
+</body>
+</html>
