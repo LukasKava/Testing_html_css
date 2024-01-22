@@ -11,12 +11,13 @@ body {
 }
 
 .hero_container {
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	background-image: url(check_new\ \(1\).png);
 	height: 90%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	overflow: hidden;
 
 	display: flex;
 	justify-content: center;
@@ -25,7 +26,7 @@ body {
 .hero_content_container {
 	width: 1140px;
 	height: 100%;
-	border: 1px solid purple;
+	/* border: 1px solid purple; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -36,7 +37,7 @@ body {
 	margin-bottom: 0.5rem;
 	color: #fff;
 	font-family: "Exo 2";
-	font-size: 3rem;
+	font-size: clamp(2rem, 4vh , 3.5rem);
 	font-style: normal;
 	font-weight: 400;
 	letter-spacing: 0.00675rem;
@@ -44,7 +45,7 @@ body {
 
 .hero_text_container p {
 	color: #92939F;
-	font-size: 1rem;
+	font-size: clamp(0.5rem, 4vh, 1rem);
 	font-family: "Open Sans";
 	font-style: normal;
 	font-weight: 300;
@@ -85,7 +86,7 @@ body {
 
 .hero_logo_container {
 	position: absolute;
-	bottom: 5rem;
+	bottom: 9%;
 	height: fit-content;
 	width: fit-content;
 	display: flex;
