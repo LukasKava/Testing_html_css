@@ -17,4 +17,80 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+
+	display: flex;
+	justify-content: center;
+}
+
+.hero_content_container {
+	width: 1140px;
+	height: 100%;
+	border: 1px solid purple;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.hero_heading {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	color: #fff;
+	font-family: "Exo 2";
+	font-size: 3rem;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0.00675rem;
+}
+
+.hero_text_container p {
+	color: #92939F;
+	font-size: 1rem;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 300;
+	line-height: 2.125rem;
+	letter-spacing: 0.002rem;
+	margin-bottom: 3.5rem;
+}
+
+.Read_more_button_home {
+	color: #FFF;
+    text-align: center;
+    font-family: "Exo 2";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    border-radius: 6.25rem;
+    border: 1px solid #1A67DC;
+    background: rgba(26, 103, 220, 0.20);
+    box-shadow: 0px 0px 100px 20px rgba(26, 103, 220, 0.18);
+    backdrop-filter: blur(2px);
+    display: inline-flex;
+    padding: 0.5rem 2.875rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hero_logo {
+	height: 2rem;
+	width: auto;
+}
+
+.hero_logo:nth-child(2) {
+	height: 1.5rem;
+	width: auto;
+}
+
+.hero_logo_container {
+	position: absolute;
+	bottom: 5rem;
+	height: fit-content;
+	width: fit-content;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 2.5rem;
+	/* border: 1px plum solid; */
 }
