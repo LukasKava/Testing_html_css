@@ -37,7 +37,7 @@ body {
 	margin-bottom: 0.5rem;
 	color: #fff;
 	font-family: "Exo 2";
-	font-size: clamp(2rem, 4vh , 3.5rem);
+	font-size: clamp(2rem, 6vh , 3.5rem);
 	font-style: normal;
 	font-weight: 400;
 	letter-spacing: 0.00675rem;
@@ -45,7 +45,7 @@ body {
 
 .hero_text_container p {
 	color: #92939F;
-	font-size: clamp(0.5rem, 4vh, 1rem);
+	font-size: clamp(0.5rem, 5vh, 1rem);
 	font-family: "Open Sans";
 	font-style: normal;
 	font-weight: 300;
