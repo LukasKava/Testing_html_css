@@ -9,6 +9,17 @@ body {
 	}
 }
 
+.heading_hero_home {
+	margin-top: 0px;
+	margin-bottom: 0.5rem;
+	color: #fff;
+	font-family: "Exo 2";
+	font-size: 3rem;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0.00675rem;
+}
+
 .proper_container {
 	border: 1px solid red;
 	width: 100%;
