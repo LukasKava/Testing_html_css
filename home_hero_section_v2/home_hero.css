@@ -13,7 +13,7 @@ body {
 .hero_container {
 	border: 1px solid red;
 	background-image: url(check_new\ \(1\).png);
-	height: 90vh;
+	height: 90%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

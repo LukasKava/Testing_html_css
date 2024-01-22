@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div class="navbar"></div>
-	<div class="hero_container">
+	<div class="hero_container" id="hero_container_id">
 		<div class="hero_text">
 			<h2 class="heading_hero_home">Welcome to Esabase2</h2>
 			<p>
@@ -22,5 +22,17 @@
 			<button class="Read_more_button_home">READ MORE</button>
 		</div>
 	</div>
+	<script>
+		function control_hero_height() {
+			var windowHeight = window.innerHeight;
+			console.log("CHECK HEIGHT: " + windowHeight);
+			var newContainerHeight = windowHeight - 36 - 80;
+
+			document.getElementById("hero_container_id").style.height = newContainerHeight + 'px';
+		}
+
+		control_hero_height();
+		addEventListener('resize', control_hero_height);
+	</script>
 </body>
 </html>
