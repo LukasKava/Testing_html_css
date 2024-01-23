@@ -37,28 +37,33 @@ body {
 	margin-bottom: 0.5rem;
 	color: #fff;
 	font-family: "Exo 2";
-	font-size: clamp(2rem, 6vh , 3.5rem);
+	font-size: clamp(2.5rem, 6vh , 3.5rem);
 	font-style: normal;
 	font-weight: 400;
 	letter-spacing: 0.00675rem;
 }
 
+.hero_text_container {
+	/* border: 1px solid red; */
+	height: fit-content;
+}
+
 .hero_text_container p {
 	color: #92939F;
-	font-size: clamp(0.5rem, 5vh, 1rem);
+	font-size: clamp(0.3rem, 3vh, 1rem);
 	font-family: "Open Sans";
 	font-style: normal;
 	font-weight: 300;
 	line-height: 2.125rem;
 	letter-spacing: 0.002rem;
-	margin-bottom: 3.5rem;
+	margin-bottom: 4rem;
 }
 
 .Read_more_button_home {
 	color: #FFF;
     text-align: center;
     font-family: "Exo 2";
-    font-size: 1rem;
+    font-size: clamp(0.3rem, 3vh, 1rem);
     font-style: normal;
     font-weight: 400;
     line-height: 2rem;
@@ -73,6 +78,7 @@ body {
     align-items: center;
     gap: 0.5rem;
 }
+
 
 .hero_logo {
 	height: 2rem;
