@@ -11,16 +11,16 @@
 <body>
 	<div class="navbar"></div>
 	<div class="hero_container" id="hero_container_id">
-		<div class="hero_content_container">
-			<div class="hero_text_container">
+		<div id="hero_content_container">
+			<div id="hero_text_container">
 				<h2 class="hero_heading">Welcome to Esabase2</h2>
-				<p>
+				<p id="hero_text_id">
 					ESABASE2 is a Space Engineering Analysis Tool, which was developed by<br>
 					FEV etamax under several ESA contracts. The software kernel is based on<br>
 					the former ESABASE Unix-Version, which now has been integrated into<br>
 					a state-of-the-art (Windows/Linux) PC-based framework.
 				</p>
-				<button class="Read_more_button_home">READ MORE</button>
+				<button id="Read_more_button_home">READ MORE</button>
 			</div>
 			<div class="hero_logo_container">
 				<img src="Group 311 (1).png" alt="Esa logo" class="hero_logo">
@@ -34,7 +34,22 @@
 			var windowHeight = window.innerHeight;
 			console.log("CHECK HEIGHT: " + windowHeight);
 			var newContainerHeight = windowHeight - 64 - 10;
+			if (windowHeight < 700)
+			{
+				//Adjustments for the text
+				document.getElementById("hero_text_id").style.fontSize = 0.95 + 'rem';
+				document.getElementById("hero_text_id").style.lineHeight = 1.9 + 'rem';
+				document.getElementById("hero_text_id").style.marginBottom = 2.2 + 'rem';
 
+				//Adjustments for the text container location
+				document.getElementById("hero_text_container").style.position = 'absolute';
+				document.getElementById("hero_text_container").style.top = 28 + '%';
+				document.getElementById("hero_content_container").style.justifyContent = 'initial';
+
+				//Adjustments for the button
+				document.getElementById("Read_more_button_home").style.fontSize = 0.8 + 'rem';
+				document.getElementById("Read_more_button_home").style.padding = "0.3rem 2.5rem";
+			}
 			
 
 			document.getElementById("hero_container_id").style.height = newContainerHeight + 'px';
