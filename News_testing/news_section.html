@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="stylesheet" href="news_section.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+	<link href='https://fonts.googleapis.com/css?family=Exo 2' rel='stylesheet'>
+</head>
+<body>
+    <div class="news_container">
+		<div class="news_tag"><p>NEWS</p></div>
+		<div class="news_inside_container" id="news_inside_container_id">
+			<div class="news_column">
+				<div class="news_item">
+					<div class="inside_inside">
+						<h4>Release 12 of<br>ESABASE2 available!</h4>
+						<div class="news_information_tags">
+							<p>By Anatoli Miller</p>
+							<p>August 11, 2021</p>
+						</div>
+					</div>
+				</div>
+				<a href="http://google.com">
+					<div class="news_hover">
+						<img src="Group 340.png" alt="" class="news_hover_picture">
+						<div class="news_read_more_button">
+							<p>Read More</p>
+							<svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 1L7 7L1 13" stroke="#FFF" stroke-width="2"/>
+							</svg>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="news_column">
+				<div class="news_item">
+					<div class="inside_inside">
+						<h4>Demo of ESABASE2<br>Release 12 available!</h4>
+						<div class="news_information_tags">
+							<p>By Anatoli Miller</p>
+							<p>August 11, 2021</p>
+						</div>
+					</div>
+				</div>
+				<a href="http://google.com">
+					<div class="news_hover">
+						<img src="Group 340.png" alt="" class="news_hover_picture">
+						<div class="news_read_more_button">
+							<p>Read More</p>
+							<svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 1L7 7L1 13" stroke="#FFF" stroke-width="2"/>
+							</svg>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="news_column">
+				<div class="news_item">
+					<div class="inside_inside">
+						<h4>Release 10 of<br>ESABASE2 available!</h4>
+						<div class="news_information_tags">
+							<p>By Karl Dietrich Bunte</p>
+							<p>January 31, 2019</p>
+						</div>
+					</div>
+				</div>
+				<a href="http://google.com">
+					<div class="news_hover">
+						<img src="Group 340.png" alt="" class="news_hover_picture">
+						<div class="news_read_more_button">
+							<p>Read More</p>
+							<svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 1L7 7L1 13" stroke="#FFF" stroke-width="2"/>
+							</svg>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="news_column">
+				<div class="news_item">
+					<div class="inside_inside">
+						<h4>NEW<br>RELEASE</h4>
+						<div class="news_information_tags">
+							<p>By Anatoli Miller</p>
+							<p>December 10, 2015</p>
+						</div>
+					</div>
+				</div>
+				<a href="http://google.com">
+					<div class="news_hover">
+						<img src="Group 340.png" alt="" class="news_hover_picture">
+						<div class="news_read_more_button">
+							<p>Read More</p>
+							<svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 1L7 7L1 13" stroke="#FFF" stroke-width="2"/>
+							</svg>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="indicator_container" id="indicator_container_id">
+			<div class="radial_button" onclick="currentCard(0)"></div>
+			<div class="radial_button" onclick="currentCard(1)"></div>
+			<div class="radial_button" onclick="currentCard(2)"></div>
+			<div class="radial_button" onclick="currentCard(3)"></div>
+		</div>
+		<a href="https://www.google.com"><div class="news_button"><p>SEE ALL NEWS</p></div></a>
+	</div>
+	<script>
+		var myinnerWidth;
+
+		function currentCard(index) {
+			console.log ("Card index: " + index);
+			showCard(index);
+		}
+
+		function showCard(index) {
+			let i = 0;
+			let cards = document.getElementsByClassName("news_column");
+			let dots = document.getElementsByClassName("radial_button");
+			if (index > cards.length) {
+				index = 0;
+			}
+			if (myinnerWidth > 1142)
+			{
+				//Used for resetting once it goes to the configuration of 4
+				document.getElementById("news_inside_container_id").style.width = 1140 + 'px';
+				document.getElementById("news_inside_container_id").style.justifyContent = "space-around";
+				document.getElementById("news_inside_container_id").style.gap = "initial";
+				//We dont want any dot indication
+				document.getElementById("indicator_container_id").style.display = "none";
+				for (i = 0; i < cards.length; i++) {
+					console.log("index: " + i);
+					cards[i].style.display = 'none';
+
+				}
+				console.log("SCENARIO 1 WIDTH: " + myinnerWidth);
+				for (i = 0; i < cards.length; i++) {
+					console.log("index: " + i);
+					cards[i].style.display = "block";
+				}
+			}
+			else if (myinnerWidth > 730) {
+				console.log("SCENARIO 2 WIDTH: " + myinnerWidth);
+				//Used for adjusting css once to the configuration of 2
+				document.getElementById("news_inside_container_id").style.width = 80 + '%';
+				document.getElementById("news_inside_container_id").style.justifyContent = "center";
+				document.getElementById("news_inside_container_id").style.gap = 2 + 'rem';
+
+
+				for (i = 0; i < dots.length; i++) {
+					console.log("index: " + i);
+
+					if (i < 2) { dots[i].style.backgroundColor = '#0D1224';}
+					else {
+						dots[i].style.display = "none";
+					}
+
+				}
+				//We want to display 2 dot navigation buttons
+				document.getElementById("indicator_container_id").style.display = "flex";
+				for (i = 0; i < cards.length; i++) {
+					console.log("index: " + i);
+					cards[i].style.display = 'none';
+
+				}
+				if (index == 1)
+				{
+					cards[index + 1].style.display = "block";
+					cards[index + 2].style.display = "block";
+				} else {
+					cards[index].style.display = "block";
+					cards[index + 1].style.display = "block";
+				}
+				dots[index].style.backgroundColor = "#1A67DC";
+			}
+			else {
+				console.log("SCENARIO 3 WIDTH: " + myinnerWidth);
+				console.log ("CARDS lenght: " + cards.length);
+				for (i = 0; i < cards.length; i++) {
+					console.log("index: " + i);
+					cards[i].style.display = 'none';
+
+				}
+				for (i = 0; i < dots.length; i++) {
+					console.log("index: " + i);
+					dots[i].style.display = "initial";
+					dots[i].style.backgroundColor = '#0D1224';
+
+				}
+				cards[index].style.display = "block";
+				dots[index].style.backgroundColor = "#1A67DC";
+			}
+		}
+
+		function saveWidth(){
+			myinnerWidth = window.innerWidth;
+			console.log("SCREEN WIDTH: " + myinnerWidth);
+			showCard(0);
+			console.log("AFTER WIDTH: " + myinnerWidth);
+		}
+
+		saveWidth();
+		addEventListener('resize', saveWidth);
+
+	</script>
+</body>
+</html>

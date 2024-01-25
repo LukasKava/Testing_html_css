@@ -15,7 +15,7 @@ body {
 }
 
 .news_inside_container {
-    /* border: 1px solid yellow; */
+    border: 1px solid yellow;
     width: 71.25rem;
     display: flex;
     flex-direction: row;
@@ -47,6 +47,27 @@ body {
     line-height: auto;
 
 	margin-bottom: 2.5rem;
+}
+
+
+.indicator_container {
+	margin-top: 1.5rem;
+	border: 1px solid red;
+	display: flex;
+	position: relative;
+	gap: 1rem;
+}
+
+.radial_button {
+	width: 17px;
+	height: 17px;
+	border-radius: 100%;
+	border: 1px solid #1A67DC;
+}
+
+
+.radial_button:hover {
+	background-color: #1A67DC;
 }
 
 .news_button {
