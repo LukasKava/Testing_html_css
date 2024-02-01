@@ -88,7 +88,7 @@ body {
 	align-items: center;
 }
 
-.news_expand_more_button:hover, .news_expand_less_button:hover {
+.news_expand:hover {
 	background-color: #1A67DC;
 }
 

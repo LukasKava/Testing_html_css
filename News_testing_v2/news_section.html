@@ -16,7 +16,7 @@
 		<script> console.log("WIDTH BEFORE HTML 2: " + window.innerWidth);</script>
 		<div class="news_inside_container" id="news_inside_container_id">
 			<script> console.log("WIDTH BEFORE HTML 3: " + window.innerWidth);</script>
-			<div class="news_column">
+			<div class="news_column" id="news_column_id">
 				<div class="news_item">
 					<div class="inside_inside">
 						<h4>Release 12 of<br>ESABASE2 available!</h4>
@@ -122,6 +122,8 @@
 			let	news_array = document.getElementsByClassName("news_column");
 			for (let i = 0; i < news_array.length; i++) {
 				news_array[i].style.display = "flex";
+				news_array[i].style.position = "relative";
+				news_array[i].style.flexDirection = "column";
 			}
 			document.getElementById("news_expand_button_state_1").style.display = "none";
 			document.getElementById("news_expand_button_state_2").style.display = "flex";
