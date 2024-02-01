@@ -41,7 +41,6 @@
 				<script> console.log("WIDTH BEFORE HTML 5: " + window.innerWidth);</script>
 			</div>
 			<div class="news_column">
-				<script> console.log("WIDTH BEFORE HTML 6: " + window.innerWidth);</script>
 				<div class="news_item">
 					<div class="inside_inside">
 						<h4>Demo of ESABASE2<br>Release 12 available!</h4>
@@ -52,7 +51,6 @@
 					</div>
 				</div>
 				<a href="http://google.com">
-					<script> console.log("WIDTH BEFORE HTML 7: " + window.innerWidth);</script>
 					<div class="news_hover">
 						<img src="Group 340.png" alt="" class="news_hover_picture">
 						<div class="news_read_more_button">
@@ -65,7 +63,6 @@
 				</a>
 			</div>
 			<div class="news_column">
-				<script> console.log("WIDTH BEFORE HTML 7: " + window.innerWidth);</script>
 				<div class="news_item">
 					<div class="inside_inside">
 						<h4>Release 10 of<br>ESABASE2 available!</h4>
@@ -76,7 +73,6 @@
 					</div>
 				</div>
 				<a href="http://google.com">
-					<script> console.log("WIDTH BEFORE HTML 8: " + window.innerWidth);</script>
 					<div class="news_hover">
 						<img src="Group 340.png" alt="" class="news_hover_picture">
 						<div class="news_read_more_button">
@@ -89,7 +85,6 @@
 				</a>
 			</div>
 			<div class="news_column">
-				<script> console.log("WIDTH BEFORE HTML 9: " + window.innerWidth);</script>
 				<div class="news_item">
 					<div class="inside_inside">
 						<h4>NEW<br>RELEASE</h4>
@@ -100,7 +95,6 @@
 					</div>
 				</div>
 				<a href="http://google.com">
-					<script> console.log("WIDTH BEFORE HTML 20: " + window.innerWidth);</script>
 					<div class="news_hover">
 						<img src="Group 340.png" alt="" class="news_hover_picture">
 						<div class="news_read_more_button">
@@ -113,102 +107,35 @@
 				</a>
 			</div>
 		</div>
-		<div class="indicator_container" id="indicator_container_id">
-			<div class="radial_button" onclick="currentCard(0)"></div>
-			<div class="radial_button" onclick="currentCard(1)"></div>
-			<div class="radial_button" onclick="currentCard(2)"></div>
-			<div class="radial_button" onclick="currentCard(3)"></div>
+		<div class="news_expand">
+			<div class="news_expand_more_button" id="news_expand_button_state_1" onclick="showMoreNews()">
+				<div></div><div></div>
+			</div>
+			<div class="news_expand_less_button" id="news_expand_button_state_2" onclick="showLessNews()">
+				<div></div><div></div>
+			</div>
 		</div>
 		<a href="https://www.google.com"><div class="news_button"><p>SEE ALL NEWS</p></div></a>
 	</div>
 	<script defer>
-		var myinnerWidth;
-
-		function currentCard(index) {
-			console.log ("Card index: " + index);
-			showCard(index);
+		function	showMoreNews() {
+			let	news_array = document.getElementsByClassName("news_column");
+			for (let i = 0; i < news_array.length; i++) {
+				news_array[i].style.display = "flex";
+			}
+			document.getElementById("news_expand_button_state_1").style.display = "none";
+			document.getElementById("news_expand_button_state_2").style.display = "flex";
 		}
 
-		function showCard(index) {
-			let i = 0;
-			let cards = document.getElementsByClassName("news_column");
-			let dots = document.getElementsByClassName("radial_button");
-			if (index > cards.length) {
-				index = 0;
+		function	showLessNews() {
+			let	news_array = document.getElementsByClassName("news_column");
+			for (let i = news_array.length - 1; i > 0; i--) {
+				news_array[i].style.display = "none";
 			}
-			if (myinnerWidth > 1142)
-			{
-				//Used for resetting once it goes to the configuration of 4
-				// document.getElementById("news_inside_container_id").style.justifyContent = "space-around";
-				// document.getElementById("news_inside_container_id").style.gap = "initial";
-				//We dont want any dot indication
-				document.getElementById("indicator_container_id").style.display = "none";
-				for (i = 0; i < cards.length; i++) {
-					cards[i].style.display = 'none';
-
-				}
-				console.log("SCENARIO 1 WIDTH: " + myinnerWidth);
-				for (i = 0; i < cards.length; i++) {
-					cards[i].style.display = "flex";
-				}
-			}
-			else if (myinnerWidth > 730) {
-				console.log("SCENARIO 2 WIDTH: " + myinnerWidth);
-				//Used for adjusting css once to the configuration of 2
-				// document.getElementById("news_inside_container_id").style.justifyContent = "center";
-				// document.getElementById("news_inside_container_id").style.gap = 2 + 'rem';
-
-
-				for (i = 0; i < dots.length; i++) {
-					if (i < 2) { dots[i].style.backgroundColor = '#0D1224';}
-					else {
-						dots[i].style.display = "none";
-					}
-
-				}
-				//We want to display 2 dot navigation buttons
-				document.getElementById("indicator_container_id").style.display = "flex";
-				for (i = 0; i < cards.length; i++) {
-					cards[i].style.display = 'none';
-
-				}
-				if (index == 1)
-				{
-					cards[index + 1].style.display = "flex";
-					cards[index + 2].style.display = "flex";
-				} else {
-					cards[index].style.display = "flex";
-					cards[index + 1].style.display = "flex";
-				}
-				dots[index].style.backgroundColor = "#1A67DC";
-			}
-			else {
-				console.log("SCENARIO 3 WIDTH: " + myinnerWidth);
-				console.log ("CARDS lenght: " + cards.length);
-				for (i = 0; i < cards.length; i++) {
-					cards[i].style.display = 'none';
-
-				}
-				for (i = 0; i < dots.length; i++) {
-					dots[i].style.display = "initial";
-					dots[i].style.backgroundColor = '#0D1224';
-
-				}
-				cards[index].style.display = "flex";
-				dots[index].style.backgroundColor = "#1A67DC";
-			}
+			news_array[0].style.display = "flex";
+			document.getElementById("news_expand_button_state_2").style.display = "none";
+			document.getElementById("news_expand_button_state_1").style.display = "flex";
 		}
-
-		function saveWidth(){
-			myinnerWidth = window.innerWidth;
-			console.log("SCREEN WIDTH: " + myinnerWidth + "screen-width: " + screen.width);
-			showCard(0);
-			console.log("AFTER WIDTH: " + myinnerWidth);
-		}
-
-		saveWidth();
-		addEventListener('resize', saveWidth);
-
 	</script>
 </body>
 </html>
