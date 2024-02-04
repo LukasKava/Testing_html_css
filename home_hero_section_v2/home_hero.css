@@ -13,7 +13,6 @@ body {
 .hero_container {
 	/* border: 1px solid red; */
 	background-image: url(check_new\ \(1\).png);
-	height: 90%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -26,7 +25,7 @@ body {
 #hero_content_container {
 	width: 1140px;
 	height: 100%;
-	/* border: 1px solid purple; */
+	border: 1px solid purple;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -46,6 +45,10 @@ body {
 #hero_text_container {
 	/* border: 1px solid red; */
 	height: fit-content;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 #hero_text_container p {
@@ -76,6 +79,7 @@ body {
     padding: 0.5rem 2.875rem;
     justify-content: center;
     align-items: center;
+	width: fit-content;
 }
 
 
