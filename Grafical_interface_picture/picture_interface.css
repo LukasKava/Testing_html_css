@@ -1,0 +1,102 @@
+body {
+	border: 1px solid blue;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: center;
+}
+@media (min-width: 1140px) {
+	.gsi_image{
+		width: 60rem;
+		height: 60rem;
+		border: 1px solid red;
+	}
+	
+	.gis_element_wrapper:nth-child(1) {
+		position: absolute;
+		z-index: 10;
+		top: 16.5rem;
+		left: 14.5rem;
+	}
+
+	.gis_element_wrapper:nth-child(2) {
+		position: absolute;
+		z-index: 9;
+		top: 17.5rem;
+		left: 19.5rem;
+	}
+
+	.gis_element_wrapper:nth-child(3) {
+		position: absolute;
+		z-index: 8;
+		top: 21.5rem;
+		left: 21.5rem;
+	}
+	.gis_element_wrapper:nth-child(4) {
+		position: absolute;
+		top: 26.5rem;
+		left: 15rem;
+	}
+	.gis_element_wrapper:nth-child(5) {
+		position: absolute;
+		top: 35rem;
+		left: 15rem;
+	}
+	.gis_element_wrapper:nth-child(6) {
+		position: absolute;
+		top: 38.5rem;
+		left: 26.5rem;
+	}
+}
+
+@media (max-width: 1140px) {
+	
+}
+
+
+.gis_element_wrapper {
+	position: absolute;
+}
+
+.gis_element_wrapper .gis_element:hover .number + .gis_text {
+	display: flex;
+	opacity: 100% !important;
+}
+
+.number {
+	width: 43px;
+	height: 43px;
+	position: absolute;
+	border: 3px solid #1a68dc90;
+	border-radius: 100%;
+}
+
+.gis_element {
+	position: relative;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.gis_text {
+	position: absolute;
+	width: fit-content;
+	display: none;
+	opacity: 0;
+	flex-wrap: nowrap;
+	white-space: nowrap;
+	padding: 0.7rem 2.5rem;
+	background-color: #fff;
+	border-radius: 0.625rem;
+	border: 1px solid #1a68dc90;
+}
+
+.graphical_interface_picture_section {
+	border: 2px solid yellow;
+	width: fit-content;
+	height: fit-content;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+

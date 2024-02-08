@@ -9,24 +9,18 @@
 	<link href='https://fonts.googleapis.com/css?family=Exo 2' rel='stylesheet'>
 </head>
 <body>
-	<script> console.log("WIDTH BEFORE HTML: " + window.innerWidth);</script>
     <div class="news_container">
-		<script> console.log("WIDTH BEFORE HTML 1: " + window.innerWidth);</script>
 		<div class="news_tag"><p>NEWS</p></div>
-		<script> console.log("WIDTH BEFORE HTML 2: " + window.innerWidth);</script>
 		<div class="news_inside_container" id="news_inside_container_id">
-			<script> console.log("WIDTH BEFORE HTML 3: " + window.innerWidth);</script>
-			<div class="news_column" id="news_column_id">
+			<div class="news_column">
 				<div class="news_item">
 					<div class="inside_inside">
-						<h4>Release 12 of<br>ESABASE2 available!</h4>
+						<h4>Release 12.1 of<br>ESABASE2 available!</h4>
 						<div class="news_information_tags">
-							<p>By Anatoli Miller</p>
-							<p>August 11, 2021</p>
+							<p>February 05, 2024</p>
 						</div>
 					</div>
 				</div>
-				<script> console.log("WIDTH BEFORE HTML 4: " + window.innerWidth);</script>
 				<a href="http://google.com">
 					<div class="news_hover">
 						<img src="Group 340.png" alt="" class="news_hover_picture">
@@ -38,14 +32,33 @@
 						</div>
 					</div>
 				</a>
-				<script> console.log("WIDTH BEFORE HTML 5: " + window.innerWidth);</script>
+			</div>
+			<div class="news_column" id="news_column_id">
+				<div class="news_item">
+					<div class="inside_inside">
+						<h4>Release 12 of<br>ESABASE2 available!</h4>
+						<div class="news_information_tags">
+							<p>August 11, 2021</p>
+						</div>
+					</div>
+				</div>
+				<a href="http://google.com">
+					<div class="news_hover">
+						<img src="Group 340.png" alt="" class="news_hover_picture">
+						<div class="news_read_more_button">
+							<p>Read More</p>
+							<svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 1L7 7L1 13" stroke="#FFF" stroke-width="2"/>
+							</svg>
+						</div>
+					</div>
+				</a>
 			</div>
 			<div class="news_column">
 				<div class="news_item">
 					<div class="inside_inside">
 						<h4>Demo of ESABASE2<br>Release 12 available!</h4>
 						<div class="news_information_tags">
-							<p>By Anatoli Miller</p>
 							<p>August 11, 2021</p>
 						</div>
 					</div>
@@ -67,30 +80,7 @@
 					<div class="inside_inside">
 						<h4>Release 10 of<br>ESABASE2 available!</h4>
 						<div class="news_information_tags">
-							<p>By Karl Dietrich Bunte</p>
 							<p>January 31, 2019</p>
-						</div>
-					</div>
-				</div>
-				<a href="http://google.com">
-					<div class="news_hover">
-						<img src="Group 340.png" alt="" class="news_hover_picture">
-						<div class="news_read_more_button">
-							<p>Read More</p>
-							<svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M1 1L7 7L1 13" stroke="#FFF" stroke-width="2"/>
-							</svg>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="news_column">
-				<div class="news_item">
-					<div class="inside_inside">
-						<h4>NEW<br>RELEASE</h4>
-						<div class="news_information_tags">
-							<p>By Anatoli Miller</p>
-							<p>December 10, 2015</p>
 						</div>
 					</div>
 				</div>
@@ -117,6 +107,17 @@
 		</div>
 		<a href="https://www.google.com" style="margin-top: 4.25rem;"><div class="news_button"><p>SEE ALL NEWS</p></div></a>
 	</div>
+	<script>
+		let	news_divs = document.querySelectorAll('.news_column');
+		let	news_hover_divs = document.getElementsByClassName("news_hover");
+		console.log("HELlo");
+		for (let i = 0; i < news_divs.length; i++) {
+			console.log("HEllo");
+			let height = window.getComputedStyle(news_divs[i]).height;
+			console.log("H [" + i + "] height: " +  height);
+			news_hover_divs[i].style.height = height;
+		}
+	</script>
 	<script defer>
 		function	showMoreNews() {
 			let	news_array = document.getElementsByClassName("news_column");
