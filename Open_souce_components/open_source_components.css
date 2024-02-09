@@ -1,0 +1,37 @@
+body {
+	display: flex;
+	justify-content: center;
+}
+
+.wrapper {
+	width: 1140px;
+	border: 1px solid red;
+}
+
+.type_1_button {
+	padding: 0;
+	display: inline-flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.type_1_button a {
+	text-decoration: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    color: #1A67DC;
+    font-family: "Open Sans";
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: .00175rem;
+}
+
+.open_source_component_wrapper {
+	display: flex;
+	gap: 3rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
