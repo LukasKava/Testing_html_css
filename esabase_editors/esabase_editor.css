@@ -1,0 +1,68 @@
+* {
+	margin: 0;
+}
+
+body {
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+}
+
+.wrapper {
+	width: 1140px;
+	border: 1px solid red;
+	display: flex;
+	justify-content: center;
+}
+
+@media (max-width: 1140px) {
+	.wrapper { width: 100vw !important;}
+}
+
+@media (max-width: 499px) {
+	.editor_button {
+		padding: 0 !important;
+		width: 9.5rem;
+		height: 6.5rem;
+		border-radius: 0.625rem !important;
+		white-space: wrap !important;
+		font-weight: 550 !important;
+	}
+	.editor_button_container {
+		gap: 1rem !important;
+	}
+}
+
+.editor_button_container {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+}
+
+.editor_button {
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+    font-family: "Exo 2";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: 0.002rem;
+    display: inline-flex;
+    padding: 0.5625rem 1.875rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6.25rem;
+    border: 1px solid #1A67DC;
+    background: #1A67DC;
+	white-space: nowrap;
+}
+
+.editor_button:hover {
+	background-color: #fff;
+	color: #102349;
+
+}
