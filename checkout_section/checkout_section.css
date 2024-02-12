@@ -8,19 +8,19 @@ body {
 
 }
 
-.wrapper {
+.checkout_section_wrapper {
 	border: 1px solid red;
 	width: 1140px;
 }
 
 @media (max-width: 1140px) {
-	.wrapper { width: 100vw; justify-content: center; display: flex;}
+	.checkout_section_wrapper { width: 100vw; justify-content: center; display: flex;}
 	.checkout_section_container { width: 90%;}
 }
 
 @media (max-width: 1080px) {
 	.checkout_section_container { flex-direction: column;}
-	.checkout_heading {	margin-bottom: 2.12rem;}
+	.checkout_section_heading {	margin-bottom: 2.12rem;}
 }
 
 @media (max-width: 726px) {
@@ -39,7 +39,7 @@ body {
 	gap: 2rem;
 }
 
-.check_product_button {
+.checkout_section_button {
     padding: 0.5rem 2.875rem;
     justify-content: center;
     align-items: center;
@@ -59,12 +59,12 @@ body {
 	text-decoration: none;
 }
 
-.check_product_button:hover {
+.checkout_section_button:hover {
 	color: #FFF;
     background: #1A67DC;
 }
 
-.checkout_heading {
+.checkout_section_heading {
 	font-family: "Exo 2";
 	font-size: 2rem;
 	line-height: 2.8rem;
