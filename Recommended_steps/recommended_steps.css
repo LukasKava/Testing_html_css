@@ -1,0 +1,76 @@
+body {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.recommended_steps_wrapper {
+	border: solid 1px red;
+	width: 1140px;
+	display: flex;
+	justify-content: center;
+}
+
+.recommended_steps_cards_container {
+	display: flex;
+	width: 100%;
+	border: 1px solid blue;
+	gap: 1rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.recommended_steps_card {
+	display: flex;
+	align-items: center;
+	gap: 1.56rem;
+	width: 23rem;
+  	height: 7.4rem;
+	border-radius: .3125rem;
+	background: #F6F7F9;
+}
+
+.recommended_steps_card svg {
+	margin-left: 1.7rem;
+	min-width: 40px;
+	min-height: 40px;
+	width: 42px;
+	height: 42px;
+}
+
+.recommended_steps_card_text {
+	color: #000;
+	font-family: "Open Sans";
+	font-size: 0.84rem;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 1.5rem;
+}
+
+.recommended_steps_card_text a {
+	text-decoration: none;
+	color: #1A67DC;
+	font-style: normal;
+	font-weight: 600;
+}
+
+.recommended_steps_card:nth-child(6) {
+	background-color: #FFF;
+}
+
+.recommended_steps_card:nth-child(6) p{
+	margin-left: 1.8rem;
+	font-size: 1rem;
+}
+
+.recommended_steps_card:nth-child(6) p span{
+	color: #1A67DC;
+	font-style: normal;
+	font-weight: 500;
+}
+
+@media (max-width: 1140px) { .recommended_steps_wrapper {width: 100vw;} .recommended_steps_cards_container { width: 90%;}}
+
+@media (max-width: 837px) {  .recommended_steps_card:nth-child(6) { justify-content: center;} .recommended_steps_card:nth-child(6) p { text-align: center; margin-left: 0;}}
+
+@media (max-width: 430px) { .recommended_steps_card_text br {display: none;} .recommended_steps_card { padding-right: 1.7rem; padding-top: 1rem; padding-bottom: 1rem; height: auto;} .recommended_steps_card:nth-child(6) {padding-right: 0;}}
