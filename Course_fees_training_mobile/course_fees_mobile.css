@@ -31,7 +31,7 @@ body {
 .course_fees_card {
 	border-radius: 0.8rem;
 	background-color: #fff;
-	padding: 3rem 2.5rem;
+	padding: 1.5rem 2.5rem;
 }
 
 .course_fees_card_top {
@@ -131,23 +131,24 @@ body {
 
 .course_fees_card h3 {
 	font-family: "Exo 2";
-	font-size: 1.5rem;
+	font-size: 1.3rem;
+	line-height: 1.8rem;
 	font-weight: 600;
 	color: #102349;
 }
 
 .cf_type_section_container {
-	margin-top: 3rem;
+	margin-top: 2.5rem;
 	display: none;
 	flex-direction: column;
-	gap: 3.5rem;
+	gap: 3rem;
 	border: 1px blue solid;
 }
 
 .course_fees_card h4 {
 	font-family: "Exo 2";
-	font-size: 1.2rem;
-	margin-bottom: 1.8rem;
+	font-size: 1.1rem;
+	margin-bottom: 1.2rem;
 	font-weight: 600;
 }
 
@@ -170,7 +171,6 @@ body {
 .course_fees_card p {
 	font-family: "Exo 2";
 	font-size: 1rem;
-	letter-spacing: 0.2%;
 }
 
 .cf_per_participant {
